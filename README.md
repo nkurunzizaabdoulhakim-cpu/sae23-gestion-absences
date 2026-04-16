@@ -1,3 +1,52 @@
+---
+
+## Travail en groupe (GitHub)
+
+Le projet est géré avec GitHub pour permettre le travail collaboratif entre les membres du groupe.
+
+### Organisation
+
+- Le code est partagé via GitHub
+- Chaque membre travaille sur son propre PC (localhost)
+- La base de données est synchronisée via le fichier :
+  `database/sae23.sql`
+
+---
+
+### Règles importantes
+
+Avant de commencer à travailler :
+
+git pull origin main
+
+Après modification :
+
+git add .
+git commit -m "description des modifications"
+git push
+
+---
+
+### Gestion de la base de données
+
+- Une seule personne modifie la base de données
+- Après modification, elle exporte la base via phpMyAdmin
+- Le fichier `database/sae23.sql` est mis à jour
+- Puis envoyé sur GitHub
+
+Ensuite, chaque membre doit :
+
+1. Faire un `git pull`
+2. Importer le fichier `database/sae23.sql` dans phpMyAdmin
+
+---
+
+### Important
+
+- Ne pas modifier les mêmes fichiers en même temps
+- Toujours faire un `git pull` avant de commencer
+- Vérifier que la base de données est à jour
+
 # SAE23 - Gestion des absences
 
 ## Installation
