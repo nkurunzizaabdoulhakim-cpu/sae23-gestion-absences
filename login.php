@@ -72,8 +72,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             <button type="submit">Connexion</button>
         </form>
 
-        <p class="small">Enseignant : admin / admin</p>
-        <p class="small">Étudiant : dupont / 1234</p>
     </div>
 </div>
 

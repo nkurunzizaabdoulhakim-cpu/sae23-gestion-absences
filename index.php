@@ -1,6 +1,4 @@
-<?php
-session_start();
-?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -13,6 +11,16 @@ session_start();
 <div class="container">
     <h1>SAE23 - Web Dynamique</h1>
     <p>Projet principal : Gestion des absences</p>
+
+    <?php
+session_start();
+
+// 🔴 Redirection automatique vers login
+if (!isset($_SESSION["user_id"])) {
+    header("Location: login.php");
+    exit();
+}
+?>
 
     <?php if (isset($_SESSION['user_nom'])): ?>
         <div class="card">
